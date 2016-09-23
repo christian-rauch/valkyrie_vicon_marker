@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<KinematicModel VERSION="3.2">
+	<Parameters>
+		<Parameter NAME="val_palm_left_val_palm_left1_x" VALUE="-53.8242384" PRIOR="-53.8242384" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left1_y" VALUE="102.71385673" PRIOR="102.71385673" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left1_z" VALUE="23.62080963" PRIOR="23.62080963" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left2_x" VALUE="-56.18675214" PRIOR="-56.18675214" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left2_y" VALUE="62.84445065" PRIOR="62.84445065" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left2_z" VALUE="23.87140436" PRIOR="23.87140436" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left3_x" VALUE="-55.14600552" PRIOR="-55.14600552" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left3_y" VALUE="17.87600431" PRIOR="17.87600431" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left3_z" VALUE="14.65674232" PRIOR="14.65674232" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left4_x" VALUE="-55.04300394" PRIOR="-55.04300394" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left4_y" VALUE="53.93768832" PRIOR="53.93768832" HIDDEN="1"/>
+		<Parameter NAME="val_palm_left_val_palm_left4_z" VALUE="-46.94895631" PRIOR="-46.94895631" HIDDEN="1"/>
+	</Parameters>
+	<Skeleton>
+		<Segment NAME="val_palm_left" OPACITY="255" BOUNDS="-50 -50 -50 50 50 50" MASS="0" MASS-CENTRE="0 0 0" INERTIA="0 0 0" RGB="255 164 0" HIDDEN="0" DRAW-END-RATIO="1" DRAW-HEIGHT="0.5" DRAW-TWIST="0" DRAW-WIDTH="0.5" DRAW-STYLE="box" DRAW-SHADING="shaded-smooth">
+			<JointFree NAME="World_val_palm_left" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0" MEAN="0 0 0 0 0 0" COVARIANCE="2.464900016784668 0 0 0 0 0 0 2.464900016784668 0 0 0 0 0 0 246.49000549316406 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000" T="* * * * * *" SIGNS="+ + + + + +" RANGE-CENTRING-STATE="0 0 0 0 0 0" RANGE-MATRIX="29.60881233215332 0 0 0 0 0 0 29.60881233215332 0 0 0 0 0 0 29.60881233215332 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000 0 0 0 0 0 0 100000000">
+				<JointTemplate MEAN="0 0 0 0 0 0" COVARIANCE="2.464900016784668 0 0 0 0 0 0 2.464900016784668 0 0 0 0 0 0 246.49000549316406 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000 0 0 0 0 0 0 1000000" TPOSE-MEAN="0 0 0 0 0 0" TPOSE-COVARIANCE="0.10000000149011612 0 0 0 0 0 0 0.10000000149011612 0 0 0 0 0 0 0.10000000149011612 0 0 0 0 0 0 0.10000000149011612 0 0 0 0 0 0 0.10000000149011612 0 0 0 0 0 0 0.10000000149011612" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" INVERSE-POST-ORIENTATION="0 0 0" INVERSE-POST-POSITION="0 0 0"/>
+			</JointFree>
+		</Segment>
+	</Skeleton>
+	<MarkerSet>
+		<Markers>
+			<Marker NAME="val_palm_left1" RADIUS="12.5" RGB="255 164 0" STATUS="required" VIEW-ANGLE="0"/>
+			<Marker NAME="val_palm_left2" RADIUS="12.5" RGB="255 164 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="val_palm_left3" RADIUS="12.5" RGB="255 164 0" STATUS="optional" VIEW-ANGLE="0"/>
+			<Marker NAME="val_palm_left4" RADIUS="12.5" RGB="255 164 0" STATUS="optional" VIEW-ANGLE="0"/>
+		</Markers>
+		<Sticks>
+			<Stick MARKER1="val_palm_left1" MARKER2="val_palm_left2" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="val_palm_left1" MARKER2="val_palm_left3" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="val_palm_left1" MARKER2="val_palm_left4" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="val_palm_left2" MARKER2="val_palm_left3" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="val_palm_left2" MARKER2="val_palm_left4" RGB1="255 164 0" RGB2="255 164 0"/>
+			<Stick MARKER1="val_palm_left3" MARKER2="val_palm_left4" RGB1="255 164 0" RGB2="255 164 0"/>
+		</Sticks>
+	</MarkerSet>
+	<TargetSet>
+		<Targets>
+			<TargetLocalPointToWorldPoint COVARIANCE="1 0 0 0 1 0 0 0 1" FILL-GAPS="0" GAUSSIAN="1" HIDDEN="0" MARKER="val_palm_left1" OPACITY="255" POSITION="'val_palm_left_val_palm_left1_x' 'val_palm_left_val_palm_left1_y' 'val_palm_left_val_palm_left1_z'" RGB="93 93 93" SEGMENT="val_palm_left" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="1 0 0 0 1 0 0 0 1" FILL-GAPS="0" GAUSSIAN="1" HIDDEN="0" MARKER="val_palm_left2" OPACITY="255" POSITION="'val_palm_left_val_palm_left2_x' 'val_palm_left_val_palm_left2_y' 'val_palm_left_val_palm_left2_z'" RGB="93 93 93" SEGMENT="val_palm_left" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="1 0 0 0 1 0 0 0 1" FILL-GAPS="0" GAUSSIAN="1" HIDDEN="0" MARKER="val_palm_left3" OPACITY="255" POSITION="'val_palm_left_val_palm_left3_x' 'val_palm_left_val_palm_left3_y' 'val_palm_left_val_palm_left3_z'" RGB="93 93 93" SEGMENT="val_palm_left" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+			<TargetLocalPointToWorldPoint COVARIANCE="1 0 0 0 1 0 0 0 1" FILL-GAPS="0" GAUSSIAN="1" HIDDEN="0" MARKER="val_palm_left4" OPACITY="255" POSITION="'val_palm_left_val_palm_left4_x' 'val_palm_left_val_palm_left4_y' 'val_palm_left_val_palm_left4_z'" RGB="93 93 93" SEGMENT="val_palm_left" WEIGHT="1" DRAW-STYLE="None">
+				<TargetLocalPointToWorldPointTemplate COVARIANCE="1 0 0 0 1 0 0 0 1"/>
+			</TargetLocalPointToWorldPoint>
+		</Targets>
+	</TargetSet>
+</KinematicModel>
+
